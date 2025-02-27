@@ -25,7 +25,7 @@ value = st.number_input(label='from' , min_value = 0, max_value = 999999999)
 
 
 if selectUnit == "Meter":
-    resultValue = value * 1000  #centi
+    resultValue = value * 100  #centi
     st.number_input(label="To" , value=resultValue )
 
 
