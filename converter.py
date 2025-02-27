@@ -27,4 +27,4 @@ def Length_converter ():
     if selectUnit == "Meter":
         resultValue = value / 1000
 
-st.time_input(label='To', key=Length_converter)
+    st.time_input(label='To', print=resultValue)
