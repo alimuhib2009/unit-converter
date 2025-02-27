@@ -11,9 +11,20 @@ conversionType = st.selectbox(label='Choose Unit Type:', options=["Length", "Tem
 #Select Unit
 
 if conversionType == "Length" :
-    selectUnit = st.selectbox(label='select Unit', options=["Meter", "Inch", "Centimeter", "Kilometer", "Milimeter", "Micrometer", "Nanometer", "Mile", "Yard", "Foot"])
+    selectUnit = st.selectbox(label='From', options=["Meter", "Inch", "Centimeter", "Kilometer", "Milimeter", "Micrometer", "Nanometer", "Mile", "Yard", "Foot"])
 elif conversionType == "Temperature":
-    selectUnit = st.selectbox(label='Select Unit', options=["celsius", "kelvin", "Fahrenheit"])
+    selectUnit = st.selectbox(label='From', options=["celsius", "kelvin", "Fahrenheit"])
 elif conversionType == "Area":
-    selectUnit = st.selectbox(label='select Unit', options=["Square Meter", "Square Kilometer", "Square Centimeter", "Square Milimeter", "Square Micrometer", "Hectare", "Square Mile", "Square Yard", "Square Foot", "Square Inch", "Arce"])
+    selectUnit = st.selectbox(label='From', options=["Square Meter", "Square Kilometer", "Square Centimeter", "Square Milimeter", "Square Micrometer", "Hectare", "Square Mile", "Square Yard", "Square Foot", "Square Inch", "Arce"])
 
+
+
+
+value = st.number_input(label='from' , min_value = 0, max_value = 999999999)
+
+
+def Length_converter ():
+    if selectUnit == "Meter":
+        resultValue = value / 1000
+
+st.time_input(label='To', key=Length_converter)
