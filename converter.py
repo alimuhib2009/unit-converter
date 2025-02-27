@@ -25,6 +25,7 @@ value = st.number_input(label='from' , min_value = 0, max_value = 999999999)
 
 def Length_converter ():
     if selectUnit == "Meter":
-        resultValue = value / 1000
+        resultValue = value / 1000 
 
-    st.time_input(label='To', print=resultValue)
+
+st.time_input(label='To', print=Length_converter)
