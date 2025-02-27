@@ -4,4 +4,4 @@ import streamlit as st
 
 st.header("UNIT CONVERTER")
 
-conversionType = st.selectbox(options=["Length", "Temperature", "Area", "Weight", "Time"])
+conversionType = st.selectbox(label='choose unit', options=["Length", "Temperature", "Area", "Weight", "Time"])
