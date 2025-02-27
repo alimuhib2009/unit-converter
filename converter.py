@@ -29,11 +29,11 @@ value = st.number_input(label='from' , min_value = 0, max_value = 999999999)
 
 
 if conversionType == "Length" :
-    ToUnit = st.selectbox(label='From', options=["Meter", "Inch", "Centimeter", "Kilometer", "Milimeter", "Micrometer", "Nanometer", "Mile", "Yard", "Foot"])
+    ToUnit = st.selectbox(label='To', options=["Meter", "Inch", "Centimeter", "Kilometer", "Milimeter", "Micrometer", "Nanometer", "Mile", "Yard", "Foot"])
 elif conversionType == "Temperature":
-    ToUnit = st.selectbox(label='From', options=["celsius", "kelvin", "Fahrenheit"])
+    ToUnit = st.selectbox(label='To', options=["celsius", "kelvin", "Fahrenheit"])
 elif conversionType == "Area":
-    ToUnit = st.selectbox(label='From', options=["Square Meter", "Square Kilometer", "Square Centimeter", "Square Milimeter", "Square Micrometer", "Hectare", "Square Mile", "Square Yard", "Square Foot", "Square Inch", "Arce"])
+    ToUnit = st.selectbox(label='To', options=["Square Meter", "Square Kilometer", "Square Centimeter", "Square Milimeter", "Square Micrometer", "Hectare", "Square Mile", "Square Yard", "Square Foot", "Square Inch", "Arce"])
 
 
 if fromUnit == "Meter" == ToUnit =="Centimeter" :
